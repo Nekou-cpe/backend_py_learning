@@ -1,0 +1,17 @@
+'''useful function1: number functions:
+sum()
+max()
+min()
+pow()
+abs()
+ord()
+int()
+range()'''
+print(ord('A'))
+print(int(68.9))
+print(min([10,23,54,6745,45,56]))
+print(max([32,12,67,86,97,99]))
+print(sum([32,12,67,86,97,99]))
+print([i for i in range(8)])
+print(pow(3,4))
+print(abs(-4840))
