@@ -28,8 +28,8 @@ class WingedAnimal(Animal):
 
 class Bat(Mammal,WingedAnimal):
     def __init__(self,nameOfAnimal,name, type,wing_count,typeOfBat) -> None:
-        Mammal.__init__(self,name, type)
-        WingedAnimal.__init__(self,wing_count)
+        Mammal.__init__(self,nameOfAnimal,name, type)
+        WingedAnimal.__init__(self,nameOfAnimal,wing_count)
         self.typeOfBat=typeOfBat
         print('init of Bat')
 
