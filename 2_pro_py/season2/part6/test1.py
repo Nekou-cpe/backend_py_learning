@@ -1,5 +1,5 @@
-'''inheritance
-1)simple:'''
+'''polymorphism
+2)overriding'''
 class Vehicle():
     count_Vehicle=0
     def __init__(self,countV,type,brand) -> None:
