@@ -12,13 +12,12 @@ class Product_Price():
         for product1 in self.list_price:
             for product2 in obj.list_price:
                 if product1<product2:
-                    return False
+                    list_bool_eq.append(False)
                 elif product1>product2:
-                    return False
+                    list_bool_eq.append(False)
                 else:
-                    return True
-        re
-        pass
+                    list_bool_eq.append(True)
+        
     def __add__(self):
         pass
 
