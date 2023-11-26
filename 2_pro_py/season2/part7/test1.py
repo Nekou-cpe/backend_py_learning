@@ -21,10 +21,10 @@ class Math():
 
     def __str__(self) -> str:#this is instance method becaus we call attrebute of instance and *self*
         return f'{self.number} , {self.about}'
-    
+#instance
 Math1=Math(12,'it is 12')
 print(Math1)
-
+#how call static and class methods
 print(Math.sum(10,12))
 print(Math.mathClass(10))
 print(Math.mathClass(988))
