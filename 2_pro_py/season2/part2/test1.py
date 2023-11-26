@@ -1,6 +1,6 @@
-''' modifiers:
+''' access modifiers:
     __privite->using by just class
-    public
+    public ->user can use this every where
     _protected-> using by class and child
     point: privite and protected can not use by instance'''
 
@@ -30,3 +30,4 @@ class Student(Person):
         self._showName
 
 Student1=Student(1,'Nekou',654)
+print(Student1)
