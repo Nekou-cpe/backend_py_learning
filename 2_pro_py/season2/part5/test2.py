@@ -16,3 +16,5 @@ class Math():
 number1=Math(13)
 number2=Math(2)
 print(number1-number2)
+print(number1**number2)
+print(number1==number2)
