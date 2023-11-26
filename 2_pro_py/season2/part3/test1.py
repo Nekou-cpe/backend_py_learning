@@ -1,4 +1,8 @@
-'''Encapsulation'''
+'''Encapsulation:
+Encapsulation is a mechanism of wrapping the data (variables) and code 
+acting on the data (methods) together as a single unit. In encapsulation,
+the variables of a class will be hidden from other classes,
+and can be accessed only through the methods of their current class.'''
 import random
 class Digital():
     __idntify=None
@@ -34,3 +38,8 @@ class Mobile(Digital):
 
     def showinfo(self):
         return f'{self._showInfo()},color:{self.color}'
+    
+Digital1=Digital('tv','tv','something',987)
+Mobile1=Mobile('mobile','mobile','sonmething else',76,'black','13')
+print(Digital1._showInfo()) #you can not call protected method in instance same this
+print(Mobile1.showinfo())
