@@ -25,3 +25,16 @@ print(repr(Season.SPRING))
 # printing all enum member using "list" keyword
 print(list(Season))
 
+#ather example:
+class Animal(Enum):
+	dog = 1
+	cat = 2
+	lion = 3
+if Animal.dog is Animal.cat:
+	print("Dog and cat are same animals")
+else:
+	print("Dog and cat are different animals")
+if Animal.lion != Animal.cat:
+	print("Lions and cat are different")
+else:
+	print("Lions and cat are same")

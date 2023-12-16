@@ -4,5 +4,8 @@ datetime
 numpy
 random
 or you write '''
-import random as r 
-from test2 import Student
+#import random as r 
+from myMudole import myMath
+
+print(myMath(12,10).summ())
+print(myMath(1,4).division())

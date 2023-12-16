@@ -9,5 +9,6 @@ class pc():
         return f'name of your computer is : {self.__name}'
 
 pc1=pc('Apple')
+#point: this is a test , you should not call privite values out of class
 pc1.__name='Lenovo'
 print(pc1)

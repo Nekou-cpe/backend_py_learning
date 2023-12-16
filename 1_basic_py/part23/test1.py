@@ -24,10 +24,10 @@ print(len(list1))
 #start or and with what?
 print(str4.startswith('i'))
 print(str4.endswith('i'))
-
-print('*'+str3.rjust(30,' ')+'*')
-print('*'+str3.ljust(30,' ')+'*')
-print('*'+str3.center(30,'*')+'*')
+print('**')
+print('*'+str3.rjust(30,'*')+'#')
+print('*'+str3.ljust(30,'*')+'#')
+print('*'+str3.center(30,'*')+'#')
 #is it digit or not?
 print('87'.isdigit(),'\n','87'.isnumeric())
 #delet space start and end

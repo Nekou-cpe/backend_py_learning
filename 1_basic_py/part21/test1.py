@@ -14,3 +14,7 @@ print((lambda m,n,functionOther:functionOther(m,n))(23,12,lambda num1,num2:num1*
 #mixing lambda and sorted
 courses=['math202','math102','physic101','physic100','algorithem116']
 print(sorted(courses,key=lambda q:q[1:]))
+
+print((lambda a,b:a+b)(2,3))
+func=lambda a,b:a*3-b
+print(func(3,3))

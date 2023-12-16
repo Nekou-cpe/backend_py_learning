@@ -11,7 +11,7 @@ print(name)
 list1=[1,2,3,4,5,6]
 list1.append(7)
 print(list1)
-list1.extend([8,9,10])
+list1.extend([8,9,10,10,10,10])
 print(list1)
 list1.remove(4)
 print(list1)
@@ -19,4 +19,4 @@ list2=[11,11,22,33,'hello',44,'bye']
 for th in list2:
     if type(th)==str:    
         print(th)
-print(list1.count(22))
+print(list1.count(10))

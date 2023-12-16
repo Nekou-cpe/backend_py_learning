@@ -22,4 +22,6 @@ car3=Car('Tara','black',1000000)
 car4=Car('Kfc','black',8000000)
 car5=Car('Pjo','blue',78000000)
 print(car1,'\n',car2,'\n',car3,'\n',car4,'\n',car5,'\n')
+list_car=[car1,car2,car3,car4,car5]
+print([car for car in list_car])
 print('count of cars: ',Car.count_cars)
