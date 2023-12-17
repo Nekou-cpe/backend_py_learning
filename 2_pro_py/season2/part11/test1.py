@@ -7,6 +7,7 @@
 from abc import ABC,abstractmethod 
 class Shapes(ABC):
     count_shapes=0
+    lists=[]
     def __init__(self,type,color) -> None:
         Shapes.count_shapes+=1
         self.type=type
@@ -14,7 +15,14 @@ class Shapes(ABC):
     @abstractmethod
     def perimiter(self):#this is abestract
         pass
+    
+    @classmethod
+    def list_Shapes(cls,name):
+        Shapes.lists.append(name)
+        return Shapes.lists
 
+    def __repr__(self) -> str:
+        return super().__repr__()
 class Circle(Shapes):
     def __init__(self, type, color,diameter) -> None:
         super().__init__(type, color)
@@ -40,3 +48,10 @@ class Squer(Shapes):
     
 Squer1=Squer('sqr','red',2)
 print(Squer1.perimiter())
+Rectangle1=Rectangle('rectangle','black',12,10)
+print(Rectangle1.perimiter())
+Circle1=Circle('circle','blue',3)
+Shapes.list_Shapes(Squer1)
+Shapes.list_Shapes(Rectangle1)
+Shapes.list_Shapes(Circle1)
+print(Shapes.lists)

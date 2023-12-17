@@ -15,7 +15,7 @@ class Fibonatchi:
     def __next__(self):
         self.a,self.b=self.b,self.a+self.b
         if self.a>self.end:
-            raise StopIteration
+            raise StopIteration('Stop Iteration')
         return self.a
     
 fib1=Fibonatchi(7240927349)

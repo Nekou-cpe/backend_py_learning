@@ -1,40 +1,25 @@
 '''inheritance
 5)hybrid:'''
-class Animal():
-    def __init__(self,nameOfAnimal) -> None:
-        self.nameOfAnimal=nameOfAnimal
+# This class is the base class
+class Father:
+    def func1(self):
+        print("This function is in Father")
 
-    def __str__(self) -> str:
-        return f'name of animal : {self.nameOfAnimal}'
-        
-class Mammal(Animal):
-    def __init__(self,nameOfAnimal,name,type) -> None:
-        Animal.__init__(self,nameOfAnimal)
-        self.name=name 
-        self.type=type
-        print('init of Mammal')
+# This class inherits from Father
+class FirstChild(Father):
+    def func2(self):
+        print("This function is in FirstChild")
 
-    def __str__(self) -> str:
-        return f'{Animal.__str__(self)}name {self.name},type {self.type}'
+# This class inherits from Father
+class SecondChild(Father):
+    def func3(self):
+        print("This function is in SecondChild")
 
-class WingedAnimal(Animal):
-    def __init__(self,nameOfAnimal,wing_count) -> None:
-        Animal.__init__(self,nameOfAnimal)
-        self.wing_count=wing_count
-        print('init of WingedAnimal')
+# This class inherits from both FirstChild and Father
+class GrandChild(FirstChild, Father):
+    def func4(self):
+        print("This function is in GrandChild")
 
-    def __str__(self) -> str:
-        return f'{Animal.__str__(self)}wing counts {self.wing_count}'
-
-class Bat(Mammal,WingedAnimal):
-    def __init__(self,nameOfAnimal,name, type,wing_count,typeOfBat) -> None:
-        Mammal.__init__(self,nameOfAnimal,name, type)
-        WingedAnimal.__init__(self,nameOfAnimal,wing_count)
-        self.typeOfBat=typeOfBat
-        print('init of Bat')
-
-    def __str__(self) -> str:
-        return f'{Mammal.__str__(self)},{WingedAnimal.__str__(self)},type of Bat is {self.typeOfBat}'
-
-Bat1=Bat('bat','bat1','bat',2,'bat1')
-print(Bat1)
+object = GrandChild()
+object.func1() # This function is in Father
+object.func2() # This function is in FirstChild
