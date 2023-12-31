@@ -1,4 +1,4 @@
-'''Decoder'''
+'''Decoratior definition basic'''
 #point one: functon is an object so you can creat new object by this function
 def function1(name):
     return f'Hello {name}'
