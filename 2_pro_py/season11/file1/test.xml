@@ -1,0 +1,20 @@
+<persons>
+    <person>
+        <fname>Nekou</fname>
+        <lname>Dfrm</lname>
+        <code>95483972</code>
+        <age>20</age>
+    </person>
+    <person>
+        <fname>Nikol</fname>
+        <lname>Dfrm</lname>
+        <code>5641</code>
+        <age>12</age>
+    </person>
+    <person>
+        <fname>Sara</fname>
+        <lname>Hofman</lname>
+        <code>878712</code>
+        <age>31</age>
+    </person>
+</persons>
