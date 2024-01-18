@@ -16,3 +16,17 @@ print(re_phon)
 gmail_list='nikjflsaf@gmail.com  aaaaaaaaaf@gmail.com  dddddddddddd@gmail.com 9778768djjf@gmail.com  jgfljs.com fjsl@gail.co'
 re_gmail=re.findall(r'[a-zA-Z]+\@.+\..{2,3}',gmail_list)
 print(re_gmail)
+
+#new test
+str_list='''
+Name is : Nekou , Age is : 22 , Avrg : 96
+Name is : Nikol , Age is : 21 , Avrg : 70.5
+Name is : Nanami , Age is : 50 , Avrg : 67
+Name is : Nikolas , Age is : 30 , Avrg : 70
+Name is : Maria , Age is : 31 , Avrg : 94
+'''
+re_str=re.findall(r'Name is : \w+ , Age is : \d+ , Avrg : \d+\.*\d',str_list)
+print(re_str)
+#re.sub->replace
+re_str_sub=re.sub(r'Name is : (\w+) , Age is : (\d+) , Avrg : (\d+\.*\d)','\g<1> , \g<2> , \g<3>',str_list)
+print(re_str_sub)
