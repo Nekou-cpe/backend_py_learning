@@ -1,7 +1,7 @@
 '''instance method -> using these for instance of obj
     static method - > dont call by instance . they use inside class
     class method -> dont call by instance . they can use static method
-    why class and static methon? : class is about obj and this obj hase diffrent thing inside itself
+    why class and static methon? : class is about obj and this obj has diffrent things inside itself
     so this uses diffrent methods and attributes'''
 
 class Math():
