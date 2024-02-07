@@ -26,5 +26,5 @@ def func1():
 @mainFunction1
 def summ(z,y):
     return z+y
-print(func1)
-print(summ)
+print(func1())
+print(summ(4,5))

@@ -9,17 +9,24 @@ class Iterable:
         self.itlistt=iter(self.listt)
     
     def __iter__(self):
-        return self.itlistt
+        try:
+            self.itlistt=iter(self.listt)
+            return self.itlistt
+        except:
+            print('not iterable')
+            
     
     def __call__(self):
         return next(self.itlistt)
     
-listt=Iterable([1,2,3,45,6,67])
+listt1=Iterable([1,2,3,45,6,67])
+listt2=Iterable([7,8,9,10])
 #type 1 
-itlist=iter(listt)
+itlist=iter(listt1)
 for i in itlist:
     print(i)
+print('--------')
 #type 2
-itlist2=iter(listt,45)
+itlist2=iter(listt2,10)
 for j in itlist2:
     print(j)

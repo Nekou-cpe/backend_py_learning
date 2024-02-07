@@ -12,7 +12,7 @@ print(function2('Nekolj'))
 print('################################')
 #point two: nested function ->the function inside other function just callable inside that function
 def function3(fname):
-    print('this is inside func3'+fname)
+    print('this is inside func3 : '+fname)
     lname=input('last name: ')
     def function4(lname):
         return f'this is inside func4 lname is {lname}'

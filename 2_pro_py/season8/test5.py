@@ -37,6 +37,8 @@ print(list4)
 list5=list(itertools.permutations(list2,3))
 #combinations:
 list6=list(itertools.combinations(list2,3))
+print(list5)
+print(list6)
 print('---------------')
 '''for math thing is good to know :
 accumulate'''

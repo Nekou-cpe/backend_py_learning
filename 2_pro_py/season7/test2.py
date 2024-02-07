@@ -5,5 +5,3 @@ def mainFunction(func):
 @mainFunction
 def function1():
     return f'******'
-
-function1
