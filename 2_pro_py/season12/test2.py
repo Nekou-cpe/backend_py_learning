@@ -25,7 +25,7 @@ Name is : Nanami , Age is : 50 , Avrg : 67
 Name is : Nikolas , Age is : 30 , Avrg : 70
 Name is : Maria , Age is : 31 , Avrg : 94
 '''
-re_str=re.findall(r'Name is : \w+ , Age is : \d+ , Avrg : \d+\.*\d',str_list)
+re_str=re.findall(r'Name is : (\w+) , Age is : (\d+) , Avrg : (\d+\.*\d)',str_list)
 print(re_str)
 #re.sub->replace
 re_str_sub=re.sub(r'Name is : (\w+) , Age is : (\d+) , Avrg : (\d+\.*\d)','\g<1> , \g<2> , \g<3>',str_list)

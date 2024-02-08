@@ -45,7 +45,7 @@ for item in list_format:
     print(f'item:  {item} ,format:  {mimetypes.MimeTypes().guess_type(item)}')
 #delete file or folder:
 os.rmdir('file1') #Error-> it is not empty
-os.rmdir('file1\\file_fortest')#delete empty folder
-os.remove('file1\\test.py')#delete file
+#os.rmdir('file1\\file_fortest')#delete empty folder
+#os.remove('file1\\test.py')#delete file
 
 

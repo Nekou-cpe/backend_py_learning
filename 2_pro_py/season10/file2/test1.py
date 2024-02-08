@@ -14,8 +14,13 @@ class Files:
         print('finishing')
         if(self.obj_file):
             self.obj_file.close()
+            
+        for e in exc:
+            print(e)
+            
         return False 
 #enter and exit works with context manager in class 
 with Files("test1.txt",'w') as f1:
-    f1.write('hello world')   
+    f1.write('hello world \n')  
+    f1.write('Nekou \n') 
     

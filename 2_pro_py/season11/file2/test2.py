@@ -6,7 +6,9 @@ Student1={"name":"Nekou","age":20,"id":400130100}
 Student2={"name":"Nikol","age":22,"id":400130183}
 Students=[Student1,Student2]
 if not(os.path.exists('test2.json')):
-    with open('test2.json','w') as f1:
+    with open('test3.json','w') as f1:
         f1.write(json.dumps(Students))
-        json.dump(Students,f1,indent=4)
+        json.dump(Students,f1,indent=2)
+else:
+    print('this work is already done!!!')
         
