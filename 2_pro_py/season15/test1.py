@@ -8,7 +8,7 @@ def pressed(event):
     messagebox.showinfo('your age is',str(n))
 root=Tk()
 root.title('Python first test')
-root.iconbitmap('icon/p3.ico')
+#root.iconbitmap('icon/p3.ico')
 w=700
 h=500
 ws=root.winfo_screenwidth()
