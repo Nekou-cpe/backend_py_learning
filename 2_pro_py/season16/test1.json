@@ -1,0 +1,7 @@
+[{"_id":{"$oid":"65f144332c6f62324882b199"},"name":"ali","about":"hfhas","gmail":"ali@gmail.com","age":53,"price":0},
+{"_id":{"$oid":"65f144332c6f62324882b19a"},"name":"sara","age":53,"gmail":"sara@gmail.com"},
+{"_id":{"$oid":"65f144332c6f62324882b19b"},"name":"Ekinux","age":53,"gmail":"Ekinux@gmail.com"},
+{"_id":{"$oid":"65f688e7f0c8295f03aa6230"},"name":"ali","about":"hfhas","gmail":"ali@gmail.com","children":["a","b","c"],"age":53,"price":0},
+{"_id":{"$oid":"65f688e7f0c8295f03aa6231"},"name":"sara","age":53,"gmail":"sara@gmail.com","children":["a",null]},
+{"_id":{"$oid":"65f688e7f0c8295f03aa6232"},"name":"Ekinux","age":53,"gmail":"Ekinux@gmail.com"},
+{"_id":1,"age":53,"price":0}]
