@@ -12,12 +12,13 @@ class Person():
         self.lname=lname
         self.phon=phon
         self.email=email
-    
+class Contact(Person,Address):
+    def __init__(self, code, fname, lname, phon, email,city,streat,num_home) -> None:
+        Person.__init__(code, fname, lname, phon, email)
+        Address.__init__(city,streat,num_home)
 class PhoneBook():
     def __init__(self) -> None:
         pass
 
     def add_Contact(self,contact):
-        pass
-class Contact(Address,Person):
-    pass
+        Contact()
