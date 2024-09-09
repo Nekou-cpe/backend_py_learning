@@ -17,6 +17,6 @@ list1.remove(4)
 print(list1)
 list2=[11,11,22,33,'hello',44,'bye']
 for th in list2:
-    if type(th)==str:    
+    if type(th) is str:    
         print(th)
 print(list1.count(10))
