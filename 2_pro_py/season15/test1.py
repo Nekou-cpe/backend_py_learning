@@ -17,6 +17,7 @@ x=(ws/2)-(w/2)
 y=(hs/2)-(h/2)
 root.geometry('%dx%d+%d+%d'%(w,h,x,y))
 frame1=Frame(root,width='700',height='200',bg='#FFCCE5')
+frame1.pack()
 frame2=Frame(master=root,width='700',height='400',bg='#E782EB')
 
 label1=Label(master=frame1,
@@ -32,7 +33,7 @@ entry1=Entry(master=frame2,
 button1=Button(master=frame2,text='set',cursor='heart')
 button1.bind('<Button>',pressed)
 
-frame1.pack()
+
 frame2.pack()
 label1.after(1000,func1)
 label1.place(x=200,y=50)
