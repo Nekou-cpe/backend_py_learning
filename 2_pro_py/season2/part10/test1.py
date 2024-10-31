@@ -1,5 +1,5 @@
 '''__hash__
-you should write four instance always inside your class'''
+you should write for instance always inside your class'''
 class Person():
     def __init__(self,fname,lname,id) -> None:
         self.fname=fname
@@ -13,11 +13,11 @@ class Person():
     def id(self,id):
         self.__id=id
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return f'{self.fname},{self.lname},{self.__id}'
 
     def __hash__(self) -> int:
-        return hash(self.__id)
+        return hash(self.__id)+hash(self.fname)+hash(self.lname)
 
     def __eq__(self, object) -> bool:
         if self.__id == object.__id:
@@ -27,6 +27,10 @@ class Person():
         
 Person1=Person('Nekou','Dfrm',400130100)
 Person2=Person('Nikol','Mrfd',400130183)
+Person3=Person('Nekou','Dfrm',400130100)
 print(Person1==Person2)
-sett={Person2,Person2,Person1} #set works with hash so when you work on objects set you should return the hash in set
+sett={Person2,Person2,Person1,Person3} #set works with hash so when you work on objects set you should return the hash in set for dont repeat 
+list_person=[Person3,Person2,Person1]
 print(sett)
+print(list_person)
+

@@ -14,17 +14,18 @@ class Math():
     def sum(x,y):
         return x+y
     
-    @classmethod#this is static method becouse we call classmethod decoder and it doesnt have *self* and we write cls
+    @classmethod#it doesnt have *self* and we write cls. this methods can work with static methods and calling them.this method work with data of this class
     def mathClass(cls,x):
+        value_sum = cls.sum(x,y=100)
         Math.lists.append(x)
-        return Math.lists
+        return f'{Math.lists},{value_sum}'
 
     def __str__(self) -> str:#this is instance method becaus we call attrebute of instance and *self*
         return f'{self.number} , {self.about}'
 #instance
 Math1=Math(12,'it is 12')
 print(Math1)
-#how call static and class methods
+#how call static and class methods?
 print(Math.sum(10,12))
 print(Math.mathClass(10))
 print(Math.mathClass(988))

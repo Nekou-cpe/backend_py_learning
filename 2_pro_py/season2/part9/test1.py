@@ -17,5 +17,5 @@ class Student():
 Student1=Student('Nekou',20,400130100)
 Student2=Student('Nekou',20,400130100)
 Student3=Student('Nikol',22,400130183)
-print(Student1==Student2) 
-print(Student1==Student3) 
+print(Student1==Student2,Student1) 
+print(Student1==Student3,Student1,' and ',Student3) 

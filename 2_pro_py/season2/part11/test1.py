@@ -22,7 +22,7 @@ class Shapes(ABC):
         return Shapes.lists
 
     def __repr__(self) -> str:
-        return super().__repr__()
+        return f'name is : {Shapes.lists},{Shapes.count_shapes}'
 class Circle(Shapes):
     def __init__(self, type, color,diameter) -> None:
         super().__init__(type, color)

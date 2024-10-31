@@ -24,7 +24,7 @@ class Student(Person):
     __idStudent=None
     def __init__(self,id,name,idStudent) -> None:
         super().__init__(id,name)
-        self.__idStudent=idStudent
+        Student.__idStudent=idStudent
 
     def showname(self):
         self._showName

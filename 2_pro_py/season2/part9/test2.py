@@ -9,10 +9,8 @@ class Student():
         return f'{self.name}{self.age}{self.idCode}'
         
     def __eq__(self, object) -> bool:
-        if not isinstance(object,self):
+        if not isinstance(object,Student):
             return 'they are student and teacher'
-        elif  self.idCode == object.idCode :
-            return 'it is a student '
         else:
             return 'they are two students'
 class Teacher():
