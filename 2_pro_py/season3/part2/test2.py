@@ -1,11 +1,11 @@
 '''Exception handeling 2'''
 class ExceptionHandeling(Exception):
     def __init__(self, message) -> None:
-        super().__init__(message)
+        super().__init__(message)#always write massage here
         self.message=message
 
     def __str__(self) -> str:
-        return f'this is Error :{self.message}'
+        return f'Error is :{self.message}'
     
 def handeling_error(nm):
     if not isinstance(nm,str):

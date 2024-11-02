@@ -9,7 +9,7 @@ def handeling_error(nm):
 
 try:
     #name=input('write your name')
-    new_name=handeling_error(0)
+    new_name=handeling_error('')
     print(new_name)
 except RuntimeError as error:
     print(error)

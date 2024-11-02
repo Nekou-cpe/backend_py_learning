@@ -4,9 +4,11 @@ iterator such as : min max sum avg ,...
 '''
 #these can be iterable:
 list1=[12,4,3,5,66]
-iter(list1)
+print(iter(list1))
 str1='Nekou'
-iter(str1)
+print(iter(str1))
+tuple1=tuple([1,2,34,4])
+print(iter(tuple1))
 #but it does not iterable
 #int1=112
 #iter(int1)
