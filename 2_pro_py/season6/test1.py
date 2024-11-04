@@ -7,7 +7,7 @@ def generator1(x,y):
 
 for obj in range(3):
     print(generator1(20,5))
-
+ 
 for item in generator1(20,5):
     print(item)
 
@@ -28,3 +28,5 @@ print(list2[0:8])
 obj2=(x for x in range(1,10000))
 for x in range(0,8):
     print(next(obj2),end=',')
+    
+    
