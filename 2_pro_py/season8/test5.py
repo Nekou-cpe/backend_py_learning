@@ -4,13 +4,13 @@ you can work with iterables easier
 import itertools
 import operator
 print(dir(itertools))
-#count 
+#count  from 10 start and then 10 by 10 go then
 for i in itertools.count(10,10):
     if i>1000:
         break
     print(i,end=' ')
-print('---------------')
-#cycle
+print('---------------1')
+#cycle 
 count=0
 list1=['ads','bfds','cdfad','ddfa']
 for j in itertools.cycle(list1):
@@ -18,12 +18,12 @@ for j in itertools.cycle(list1):
         break
     print(j,end=' ')
     count+=1
-print('---------------')
+print('---------------2')
 #repeat
 sting1='Hello World'
 for k in itertools.repeat(sting1,3):
     print(k,end='*')
-print('---------------')
+print('---------------3')
 '''for working in data you can use:
 combinations,permytations,product'''    
 #the next things are using for recursive or order or combination
@@ -33,13 +33,13 @@ list3=list(itertools.product(list1,repeat=2))
 list4=list(itertools.product(list1,list2))
 print(list3)
 print(list4)
-#permutations:
+#permutations: can changing places
 list5=list(itertools.permutations(list2,3))
-#combinations:
+#combinations: no chaging places
 list6=list(itertools.combinations(list2,3))
 print(list5)
 print(list6)
-print('---------------')
+print('---------------4')
 '''for math thing is good to know :
 accumulate'''
 list7=[10,9,8,7]
@@ -47,7 +47,7 @@ list8=list(itertools.accumulate(list7,operator.sub))
 list9=list(itertools.accumulate(list7))
 print(list8)
 print(list9)
-print('---------------')
+print('---------------5')
 #chain using by set structures,they should be iterable:
 list10=list(itertools.chain.from_iterable([list1,list2,sting1,list7]))
 print(list10)

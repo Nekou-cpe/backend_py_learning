@@ -20,8 +20,8 @@ print(string.ascii_uppercase)
 print(string.digits)#shows digits exist in digit
 print(string.printable)#shows all print able things
 print(string.punctuation)#shows labels
-temp_str=string.Template('my name is $name')
-str_temped=temp_str.substitute(name='Nekou')
+temp_str=string.Template('my name is $N')
+str_temped=temp_str.substitute(N='Nekou')
 print(str_temped)
 str1='neKOu dFrm'
 print(string.capwords(str1))

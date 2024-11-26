@@ -12,7 +12,7 @@ print('----------------------')
 '''this has error
 dict1={} 
 dict1['h']=5'''
-#this way has no error type: int str object-> it means you can give dict any type
+#this way has no error type: int, str, object-> it means you can give dict any type
 dict1=collections.defaultdict(object)
 print(dict1) #has no error
 print('----------------------')
@@ -35,6 +35,7 @@ print()
 dict6=collections.ChainMap(dict1,dict2,dict3,dict4,dict5)
 print(dict6)
 print()
+#________________________________________
 #namedtuple -> is new structure you can work it when you need class obj with attribut
 People=collections.namedtuple('People', 'name age code_indentify number children')
 person1=People('Nekou',21,4889,848974298,[])
@@ -53,6 +54,7 @@ print(person1._asdict())
 #person1._fields ->return filds in obj
 print(person1._fields)
 print()
+#______________________________
 #you can creat queue of stack with new structure:
 dqu1=collections.deque(['a','b','c','d','h'])
 print(dqu1)
