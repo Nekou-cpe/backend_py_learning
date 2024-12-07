@@ -16,4 +16,5 @@ x=10
 x=x*2
 c=80
 func1()
+k=10
 print('out of func',x,c,k)

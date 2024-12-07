@@ -21,9 +21,10 @@ print('----------------')
 def func4(**kwargs):
     for key in kwargs:
         print(key,kwargs[key])
-
+        
 dict2={'a':9,'b':8,'c':2}
 func4(**dict2)
+func4(a=10,b=34,c=4)
 print('----------------')
 #unpacking
 def func8(h,m,s):
