@@ -1,5 +1,4 @@
-Hello World
-My name is Nekou Dfrm
+Hello Worl***My name is Nekou Dfrm
 I'm 21 years old.
 Right now i am learning python for backend developing
 I really love python

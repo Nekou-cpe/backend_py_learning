@@ -1,0 +1,8 @@
+
+file1=open('2_pro_py/season10/file1/test1.txt','r+')
+print(file1.tell())
+print(file1.seek(20,0))
+print(file1.readlines())
+print(file1.seek(10,0))
+file1.write('***')
+file1.close()
