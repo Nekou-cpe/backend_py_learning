@@ -10,7 +10,7 @@ class Files:
         self.obj_file=open(self.file,self.file_mode)
         return self.obj_file
     
-    def __exit__(self,*exc):
+    def __exit__(self,*exc):#exc -> all exception we can write here
         print('finishing')
         if(self.obj_file):
             self.obj_file.close()
