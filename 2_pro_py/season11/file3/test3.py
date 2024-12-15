@@ -23,5 +23,5 @@ with open('test2.json','r') as f2:
     strr=f2.read()
     
 data=demj.decode(strr)
-for key,val in data:
-    print(key,' ',val)
+for person in data:
+    print(person)
