@@ -1,7 +1,6 @@
 #diseriallization -> laods=use str insid python / load=use str from json file to python
 import json
 import os
-import demjson3
 print(os.getcwd())
 #loads for deseriallization:
 str_desriall='''[{"fname":"Nekou","lname":"Dfrm","Code":4467,"age":20},

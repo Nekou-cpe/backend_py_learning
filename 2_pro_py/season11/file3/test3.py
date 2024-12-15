@@ -13,10 +13,15 @@ class Person():
         
 Person1=Person('Nekou','Dfrm')
 Person2=Person('Nikol','Mrfd')
+Person3=Person('Homa','hdr')
 if not(os.path.exists('test2.json')):
-    with open('test2.json','w') as f1:
+    with open('test2.json','w+') as f1:
         f1.write(demj.encode(Person1.__dict__))
         f1.write(demj.encode(Person2.__dict__))
-        
-strr=demj.encode(Person1.__dict__)
-print(demj.decode(strr))
+        f1.write(demj.encode(Person3.__dict__))
+with open('test2.json','r') as f2:
+    strr=f2.read()
+    
+data=demj.decode(strr)
+for key,val in data:
+    print(key,' ',val)
