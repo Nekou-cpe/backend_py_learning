@@ -6,7 +6,7 @@ and can be accessed only through the methods of their current class.'''
 import random
 class Digital():
     __idntify=None
-    _=None
+    _y=None
     z=None
     def __init__(self,name,type,brand,idCode) -> None:
         self.name=name
@@ -43,3 +43,4 @@ Digital1=Digital('tv','tv','something',987)
 Mobile1=Mobile('mobile','mobile','sonmething else',76,'black','13')
 print(Digital1._showInfo()) #you can not call protected method in instance same this
 print(Mobile1.showinfo())
+print(Mobile1._showInfo())

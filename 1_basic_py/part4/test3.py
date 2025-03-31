@@ -7,3 +7,4 @@ n=2
 print(bool(n==3))
 print(type(True))
 print(int(False))
+print(int(True))

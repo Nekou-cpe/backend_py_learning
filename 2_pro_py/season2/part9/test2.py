@@ -7,7 +7,7 @@ class Student():
 
     def __str__(self) -> str:
         return f'{self.name}{self.age}{self.idCode}'
-        
+       
     def __eq__(self, object) -> bool:
         if not isinstance(object,Student):
             return 'they are student and teacher'
@@ -22,6 +22,12 @@ class Teacher():
     def __str__(self) -> str:
         return f'{self.name}{self.age}{self.idCode_t}'
     
+    def __eq__(self, object) -> bool:
+        if not isinstance(object,Teacher):
+            return 'they are not Teachers'
+        else:
+            return 'they are Teachers'
+    
 Student1=Student('Nekou',20,400130100)
 Student2=Student('Nekou',20,400130100)
 Student3=Student('Nikol',22,400130183)
@@ -29,3 +35,4 @@ print(Student1==Student2)
 print(Student1==Student3) 
 Teacher1=Teacher('MssNekou',90,2178)
 print(Student3==Teacher1)
+print(Teacher1==Student3)

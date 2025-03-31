@@ -2,6 +2,8 @@
 #end= sep=
 print('hello',end='_')
 print('world')
+print('hello',end='')
+print('world')
 print('my','name','is',sep='-')
 
 #control str \n \t

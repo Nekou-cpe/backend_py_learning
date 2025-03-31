@@ -6,10 +6,10 @@ class Person():
         self.lname=lname
         self.__id=id
     
-    @property
+    @property #getter
     def id(self):
         return self.__id
-    @id.setter
+    @id.setter #setter
     def id(self,id):
         self.__id=id
 

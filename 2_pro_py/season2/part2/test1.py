@@ -8,8 +8,8 @@ class Person():
     _name=None
     __id=None
     def __init__(self,id,name) -> None:
-        self._name=name
-        self.__id=id
+        self._name=name#protected
+        self.__id=id#private
 
     def _showName(self):
         return self._name
