@@ -1,4 +1,3 @@
-
 class XYZ():
     '''this class shows information about a company'''
     def __init__(self,name,maneger_name,address,count_employee,revenue) -> None:

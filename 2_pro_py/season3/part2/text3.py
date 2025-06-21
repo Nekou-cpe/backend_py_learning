@@ -8,7 +8,7 @@ def exceptionAge(age):
     return age
 
 try:
-    number=exceptionAge(input('please write your age'))
+    number=exceptionAge((input('please write your age')))
     
 except RuntimeError as error :
     print(error)

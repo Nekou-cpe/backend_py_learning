@@ -3,7 +3,7 @@ callable like a function. When you define a class in Python, you
 can define the __call__() method to make the instances of the class 
 callable. This means that you can use the instance of the class like 
 a function and call it with arguments.'''
-class Iterable:
+class Iterable():
     def __init__(self,listt) -> None:
         self.listt=listt
         self.itlistt=iter(self.listt)

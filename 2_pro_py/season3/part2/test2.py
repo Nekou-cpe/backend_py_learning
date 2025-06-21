@@ -16,7 +16,7 @@ def handeling_error(nm):
 
 try:
     #name=input('write your name')
-    new_name=handeling_error(1)
+    new_name=handeling_error('est')
     print(new_name)
 except ExceptionHandeling as error:
     print(error)
