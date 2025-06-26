@@ -22,6 +22,8 @@ print(string.printable)#shows all print able things
 print(string.punctuation)#shows labels
 temp_str=string.Template('my name is $N')
 str_temped=temp_str.substitute(N='Nekou')
+str_new=string.Template('new $x').substitute(x=123)
 print(str_temped)
+print(str_new)
 str1='neKOu dFrm'
 print(string.capwords(str1))

@@ -1,4 +1,4 @@
-'''Decorators 1'''
+'''Decorators 1 :without parameter'''
 def mainFunction(func):
     for j in range(4): print(func())
     

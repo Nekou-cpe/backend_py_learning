@@ -1,4 +1,4 @@
-'''Generators: is a function reaturn iterator object by using yeild keyword'''
+'''Generators: is a function reaturn object iterator  by using yeild keyword'''
 def generator1(x,y):
     yield x+y
     yield x-y

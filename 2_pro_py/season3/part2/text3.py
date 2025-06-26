@@ -1,11 +1,18 @@
 def exceptionAge(age):
-    if isinstance (age,str):
-        raise RuntimeError('please write number')
-    elif (age>120 or age<1):
-        raise RuntimeError('please write true age')
-    elif isinstance(age,float):
-        raise RuntimeError('don not write float')
-    return age
+    try:
+        inputt=int(age)
+        
+    except ValueError:
+        try:
+            float(age)
+            raise RuntimeError('don not write float')
+        except ValueError:
+            raise RuntimeError('please write number')
+                  
+    else:
+        if (inputt>120 or inputt<1):
+            raise RuntimeError('please write true age') 
+        return age
 
 try:
     number=exceptionAge((input('please write your age')))
@@ -13,4 +20,4 @@ try:
 except RuntimeError as error :
     print(error)
 else:
-    print('\t','number')
+    print('\t',number)

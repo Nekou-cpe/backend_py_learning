@@ -12,7 +12,7 @@ print('----------------------')
 '''this has error
 dict1={} 
 dict1['h']=5'''
-#this way has no error type: int, str, object-> it means you can give dict any type
+#this way has no error type: int -> key is just int, str -> key is just str, object-> it means you can give dict any type
 dict1=collections.defaultdict(object)
 print(dict1) #has no error
 print('----------------------')
@@ -46,12 +46,13 @@ print(person2)
 print(person1.age)
 print(person1.children)
 print(person2.name)
+print('------------------')
 #People._make(person2)-> make person2 itrable then doestn show attribute names,...
 for item in People._make(person2):
     print(item)
 #person1._asdict -> return to dict
 print(person1._asdict())
-#person1._fields ->return filds in obj
+#person1._fields ->return filds(name of attributs we want  to use) in obj
 print(person1._fields)
 print()
 #______________________________

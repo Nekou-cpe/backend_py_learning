@@ -1,4 +1,4 @@
-'''Decorators 2'''
+'''Decorators 2: with parameter'''
 def mainFunction1(func):
     def function1(*args,**kwargs):
         x=func(*args,**kwargs)
@@ -21,7 +21,7 @@ def mainFunction3(func):
 @mainFunction2
 @mainFunction3
 def func1():
-    return 20
+    return 2
 
 @mainFunction1
 def summ(z,y):

@@ -1,5 +1,5 @@
 '''datetime modul'''
-from datetime import date,time,datetime,timedelta
+from datetime import date,time,datetime,timedelta,UTC
 import pytz
 from khayyam import *
 #date
@@ -11,15 +11,14 @@ time1=time(23,14,23,124)
 print(time1)
 #datetime 
 print(datetime.now()) #shows system time
-print(datetime.utcnow())
+print(datetime.now(UTC))
 datetime1=datetime(2003,12,12,11,12,13)
 print(datetime1)
-print(date.today())
 #str formats in datetime module:
 #we want to show time by diffrent format ->strftime
 print(datetime.now().strftime('%d,%m,%y %H:%M:%S'))
 #change format from database to other formats ->strptime
-datetime2='8/8/2002'
+datetime2='27/8/2002'
 datetime3=datetime.strptime(datetime2,'%d/%m/%Y')
 print(datetime3.strftime('%Y,%m,%d'))
 #pytz -> python timezone ,shows real time
