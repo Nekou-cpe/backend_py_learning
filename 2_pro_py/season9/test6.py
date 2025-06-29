@@ -1,4 +1,6 @@
-'''map filter reduce'''
+'''map : Transform each element
+filter :Keep only items that match a condition
+reduce :Combine all items into a single value'''
 from functools import reduce
 #map: structure: list(map(func,value)) value can be any iterable structure
 list1=[1,2,3,4,5]

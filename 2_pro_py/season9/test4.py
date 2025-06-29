@@ -51,5 +51,16 @@ g4=generator4(g5)
 for i in range(10):
     next(g4)
 
+    
+def echo_gen():
+    value = yield "Start"
+    while True:
+        value = yield f"You sent: {value}"
+
+gen = echo_gen()
+print(next(gen))         # ➜ "Start" (starts the generator)
+print(gen.send("Hi!"))   # ➜ "You sent: Hi!"
+print(gen.send("Again")) # ➜ "You sent: Again"
+
 
 

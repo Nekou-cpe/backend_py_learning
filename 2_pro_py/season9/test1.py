@@ -45,3 +45,16 @@ def func5(*args):
 list5=['Nikolj','Yuri','Sam']   
 func5(*list5)
 print('----------------')
+
+def func7(*args, **kwargs):
+    for arg in args:
+        print("arg:", arg)
+    for key, value in kwargs.items():
+        print("kwarg:", key, "=", value)
+    return True
+
+list6 = {'h': 1, 'b': 3, 'c': 4}
+
+# Use **list6 to pass as keyword arguments
+output = func7(**list6)
+print(output)

@@ -54,14 +54,17 @@ print(list10)
 #compress
 list11=list(itertools.compress(sting1,[0,1,1,0,0,0,1,1,0,0]))
 print(list11)
-#dropwhile -> first parametr should be lambda func or func,second should be iterable
-list12=[1,2,3,4,5,6,7,8,9,10]
+#dropwhile -> first parametr should be lambda func or func,second should be iterable ->it shows after that condition not true
+list12=[3,1,2,3,4,5,6,7,8,9,10]
 list13=list(itertools.dropwhile(lambda x: x*2>4,list12))
+#filterfalse -> shows the things are not except condition
 list14=list(itertools.filterfalse(lambda x: x*2>4,list12))
+#takewhile -> not dropwhile
 list15=list(itertools.takewhile(lambda x: x*2>4,list12))
 print(list13)
 print(list14)
 print(list15)
-#ist slice
+# works like slicing, but for any iterable (not just lists). It returns a slice from the iterable
+#list7[1:3:2]
 list16=list(itertools.islice(list7,1,3,2))
 print(list16)

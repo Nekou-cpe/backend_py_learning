@@ -1,5 +1,6 @@
 '''local and global variables'''
 #global variable
+#k=10
 def func1():
     #creat global
     global c 
