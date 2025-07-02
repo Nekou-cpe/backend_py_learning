@@ -1,4 +1,3 @@
-
 file1=open('2_pro_py/season10/file1/test1.txt','r+')
 print(file1.tell())
 print(file1.seek(20,0))

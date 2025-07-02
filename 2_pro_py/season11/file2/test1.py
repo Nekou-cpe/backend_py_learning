@@ -11,7 +11,7 @@ str_list=json.loads(str_desriall)
 print(str_list)
 print(type(str_list))
 #load for deseriallz
-with open('2_pro_py\\season11\\file1\\test.json','r') as f1:
+with open('backend_py_learning\\2_pro_py\\season11\\file1\\test.json','r') as f1:
     list_json=json.load(f1)
 print(list_json)
 
