@@ -1,4 +1,4 @@
-'''regular expression'''
+'''regular expression:match and search'''
 '''list of regex:
 "\d"->a number search
 "\w"-> a alphaber search
@@ -14,6 +14,5 @@
 "$"-> one to everything search
 "|"-> one to everything search
 "?"-> one to everything search
-
 '''
     

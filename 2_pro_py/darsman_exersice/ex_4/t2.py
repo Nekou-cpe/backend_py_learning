@@ -32,10 +32,11 @@ class FreeParticipants(Person):
         self.inter_score=inter_score
         self.wrt_score=wrt_score
         while True:
-            if (0 <= self.inter_score <= 100) and (0 <= self.wrt_score <= 100):
-                break
+            try:
+                if (0 <= self.inter_score <= 100) and (0 <= self.wrt_score <= 100):
+                    break
 
-            else:
+            except: 
                 print("❌ Please enter a valid number between 0 and 100.")
                 self.inter_score=int(input('enter intern score'))
                 self.wrt_score=int(input('enter wrt score'))
