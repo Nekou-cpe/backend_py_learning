@@ -1,4 +1,7 @@
-'''regular expression:match and search'''
+'''regular expression:
+ search
+ find
+ match'''
 '''list of regex:
 "\d"->a number search
 "\w"-> a alphaber search
