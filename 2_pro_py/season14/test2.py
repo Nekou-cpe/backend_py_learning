@@ -1,18 +1,19 @@
 from mysql.connector import connect,Error
 '''creating new tables'''
 try:
-    with connect() as db:
+    with connect(host='localhost',user='root',password='400130',database='newsdb') as db:
         myCursor=db.cursor()
-        user='''CREATE TABLE user(
-            user_id INT NOT NULL UNIQUE AUTO_INCREMENT,
-            user_pass INT NOT NULL,
-            user_fname VARCHAR(20) NOT NULL,
-            user_lname VARCHAR(30) NOT NULL,
-            age INT,
-            phon INT NOT NULL,
-            email varchar(50)
-            )'''
-        myCursor.execute(user)
+
+        comments='''
+            create table comments(
+                comment_id int not null unique ,
+                count_likes int ,
+                comment varchar(2000) not null,
+                user_id int,
+                FOREIGN key (user_id) REFERENCES user(user_id)
+            );
+            '''
+        myCursor.execute(comments)
         db.commit()
         print('done updating...')
 except Error as error:
